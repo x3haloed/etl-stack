@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Generated example artifacts; directory placeholders remain tracked.
+examples/*/output/*.csv
+examples/*/runs/*.json

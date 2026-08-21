@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {"path": "source/customers.csv", "table": "source_customers"},
+    {"path": "source/transactions.csv", "table": "source_transactions"}
+  ],
+  "outputs": [
+    {
+      "path": "output/reconciled_customers.csv",
+      "query": "SELECT customer_id, customer_name, transaction_count, total_amount FROM reconciled_customers ORDER BY customer_id"
+    },
+    {
+      "path": "output/unmatched_transactions.csv",
+      "query": "SELECT transaction_id, customer_id, amount FROM unmatched_transactions ORDER BY transaction_id"
+    }
+  ],
+  "checks_query": "SELECT check_name, status, observed, expected FROM checks ORDER BY check_name",
+  "presentation": {
+    "outputs": [
+      "output/reconciled_customers.csv",
+      "output/unmatched_transactions.csv"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "skill_name": "reproducible-data-work",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use the reproducible-data-work skill to merge examples/customer-reconciliation/source/customers.csv and examples/customer-reconciliation/source/transactions.csv.",
+      "expected_output": "The agent preserves and hashes both inputs, infers and documents the join grain, writes explicit ordered SQL, prevents row multiplication, produces a merged deliverable and visible unmatched-record exceptions, records domain-relevant checks and a provenance manifest, verifies reproducibility, and opens both deliverables in an installed spreadsheet application or an HTML review fallback without requiring the user to request those behaviors.",
+      "files": [
+        "examples/customer-reconciliation/source/customers.csv",
+        "examples/customer-reconciliation/source/transactions.csv"
+      ]
+    }
+  ]
+}

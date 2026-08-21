@@ -1,0 +1,5 @@
+transaction_id,customer_id,amount
+T001,C001,120.50
+T002,C001,79.50
+T003,C002,250.00
+T004,C999,10.00
