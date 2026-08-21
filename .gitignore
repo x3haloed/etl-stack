@@ -4,3 +4,6 @@ __pycache__/
 # Generated example artifacts; directory placeholders remain tracked.
 examples/*/output/*.csv
 examples/*/runs/*.json
+
+# Local skill-evaluation workspaces and transcripts.
+reproducible-data-work-workspace/

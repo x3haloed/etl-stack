@@ -8,6 +8,15 @@
       "files": [
         "examples/customer-reconciliation/source/customers.csv",
         "examples/customer-reconciliation/source/transactions.csv"
+      ],
+      "expectations": [
+        "Both source files remain byte-identical and their SHA-256 hashes are recorded.",
+        "All data interpretation and transformation logic is preserved in ordered, readable SQL files.",
+        "The agent names its chosen output grain and join coverage, and the primary deliverable implements that interpretation without accidental row multiplication or data loss.",
+        "Unmatched transaction records are delivered as visible row-level exceptions even though the prompt did not request them.",
+        "A run manifest records the engine version, configuration, inputs, ordered steps, outputs, and domain-relevant reconciliation checks.",
+        "Replaying the workflow produces byte-identical primary and exception outputs.",
+        "The primary result and exception output are actually opened in an installed spreadsheet application, or an HTML review report is opened when no spreadsheet application exists."
       ]
     }
   ]

@@ -33,6 +33,11 @@ multiplication, reconcile coverage and control totals, expose unmatched or
 invalid records, produce reviewable deliverables, and place those deliverables
 in front of the user. Do not make the user enumerate these safeguards.
 
+Data requests are often semantically underspecified. Choose a reasonable interpretation from the data and request, briefly name any
+consequential assumption such as output grain or join coverage, and show the
+result immediately. The visible result gives the user the fastest path to say
+what they meant differently.
+
 ## Inspect before transforming
 
 Profile the inputs and state the data grain, candidate keys, important nulls,

@@ -28,6 +28,11 @@ The user experiences complete confidence: raw files are never touched, every mut
 - **Intent Completion:** Requests may name only the mechanical operation. The
   agent still infers and performs the correctness, exception-reporting,
   provenance, and visible-review work needed for a trustworthy result.
+- **Fast Semantic Correction:** When a request leaves data semantics ambiguous,
+  the agent chooses one reasonable interpretation, names consequential
+  assumptions concisely, and presents the result immediately. The stack does
+  not attempt to eliminate ambiguity through an expanding glossary or a bundle
+  of speculative outputs.
 
 ## Evaluation regime
 
